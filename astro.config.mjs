@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://docs.pregoi.com',
+  base: '/',
   integrations: [
     starlight({
       title: 'Prego Docs',
