@@ -192,6 +192,18 @@ html {
 }
 
 /* ----- 구분선 제거: 좌/가운데/우 세로선, 가운데 타이틀 하단선 (헤더 하단선만 유지) ----- */
+:global(.content-panel) {
+  border-bottom: none !important;
+}
 :global(.content-panel + .content-panel) {
   border-top: none !important;
+}
+/* 타이틀 바로 아래 나오는 hr(구분선) 제거 — 모든 페이지 공통 */
+:global(.sl-markdown-content hr) {
+  border: none !important;
+  border-bottom: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  visibility: hidden !important;
 }
